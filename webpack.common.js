@@ -8,12 +8,6 @@ module.exports = {
             title: 'Caching'
         }),
     ],
-    output: {
-        filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
-        clean: true, // cleans the dist folder everytime
-        publicPath: '/'
-    },
     module: {
         rules: [
             {

@@ -17,7 +17,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --open --config webpack.dev.js",
     "dev:server": "node server.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "serve": "webpack serve --open --config webpack.prod.js"
   },
   "devDependencies": {
     "chalk": "^2.4.2",
