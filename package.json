@@ -1,22 +1,36 @@
 {
   "name": "create-edo-app",
-  "version": "1.0.0",
-  "description": "",
+  "author": "Eduardo Vedes",
+  "description": "Another React Boilerplate",
+  "license": "MIT",
+  "private": true,
+  "version": "0.0.1",
+  "keywords": [
+    "create-edo-app",
+    "react",
+    "boilerplate"
+  ],
   "bin": {
-    "create-edo-app": "./bin/generate-app.js"
+    "create-edo-app": "./bin/create-edo-app.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel index.html",
-    "build": "parcel build index.js"
+    "dev": "webpack serve --open --config webpack.dev.js",
+    "dev:server": "node server.js",
+    "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  },
-  "dependencies": {
-    "rimraf": "^2.7.1"
+    "chalk": "^2.4.2",
+    "css-loader": "^5.2.6",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.1",
+    "lodash": "^4.17.21",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.38.1",
+    "webpack-bundle-analyzer": "^4.4.2",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-middleware": "^5.0.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }
