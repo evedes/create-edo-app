@@ -1,18 +1,12 @@
-import join from 'lodash/join'
-import printMe from './print.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
 
-function component() {
-    const element = document.createElement('div')
-    const btn = document.createElement('button')
-    
-    element.innerHTML = join(['Hello Webpack', 'I am Edo!!!'], ', ')
+const HelloWorld = () => (
+  <div className="main">
+    <h1>CREATE EDO APP</h1>
+    <h3>ROCK ON 💪</h3>
+  </div>
+)
 
-    btn.innerHTML = 'Click me and check the console!'
-    btn.onclick = printMe
-
-    element.appendChild(btn)
-    
-    return element
-}
-
-document.body.appendChild(component())
+ReactDOM.render(<HelloWorld />, document.getElementById('root'))
